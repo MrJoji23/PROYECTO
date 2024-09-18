@@ -1,8 +1,8 @@
 function toggleDropdown() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
-
-// Cierra el menú si el usuario hace clic f
+// HOLA PRUEBA PARA GITHUB
+// Cierra el menú si el usuario hace clic 
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
