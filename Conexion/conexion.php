@@ -1,6 +1,6 @@
 <?php
     function MiConexion(){
-            $enlace = mysqli_connect("localhost:3307","root","");
+            $enlace = mysqli_connect("localhost:3306","root","");
             if (!$enlace) {
                 exit;
             }
