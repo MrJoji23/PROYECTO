@@ -1,25 +1,39 @@
 body {
-    background-color: darkgray;
-    color: #333333; 
+    background-color: #333;
+    color: #ddd;
     font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
 }
 
-.formulario {
-    background-color: #FFFFFF;
+header {
+    text-align: center;
     padding: 20px;
+    background-color: #222;
+    color: #fff;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.formulario {
+    background-color: #ffffff;
+    padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     width: 300px;
     text-align: center;
 }
 
 .formulario h2 {
-    color: #004080; 
+    color: #000000;
 }
 
 .username {
@@ -28,50 +42,72 @@ body {
 }
 
 .username label {
-    color: #004080;
+    color: #000000;
 }
 
 .username input {
-    background-color: #e4e0e0; 
+    background-color: #d0d0d0;
     border: none;
-    padding: 10px 10px;
-    color: #333333;
+    padding: 10px;
+    color: #333;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: calc(100% - 20px);
+}
+
+.formulario input[type="submit"]{
+    background-color: #000000;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
     cursor: pointer;
     border-radius: 5px;
     margin-top: 10px;
     width: calc(100% - 20px);
-   
+    display: block;
+    text-align: center;
+    text-decoration: none; 
 }
 
-.formulario input[type="button"] {
-    background-color: #A8D5BA; 
+.formulario input[type="button"]{
+    background-color: #000000;
     border: none;
     padding: 10px 20px;
-    color: #333333;
+    color: #fff;
     cursor: pointer;
     border-radius: 5px;
     margin-top: 10px;
-    width: calc(100% - 20px); 
+    width: calc(100% - 20px);
+    display: block;
+    text-align: center;
+    text-decoration: none; 
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #686767;
 }
 
 .formulario input[type="button"]:hover {
-    background-color: #76C7C0; 
+    background-color: #686767;
 }
 
-a {
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #fff;
+}
+
+footer a {
     text-decoration: none;
+    color: #bbb;
+    margin: 0 10px;
 }
-.formulario input[type="submit"] {
-    background-color: #e4e0e0;
-    color: black;
+
+footer a:hover {
+    color: #fff;
 }
-.button{
-    background-color: #A8D5BA; 
-    border: none;
-    padding: 10px 20px;
-    color: #333333;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
-    width: calc(100% - 20px);  
-}
+
+
+
+
