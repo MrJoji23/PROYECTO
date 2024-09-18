@@ -2,7 +2,7 @@ function toggleDropdown() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Cierra el menú si el usuario hace clic fuera de él
+// Cierra el menú si el usuario hace clic fuera de él ahdwgdyuwhdad
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
