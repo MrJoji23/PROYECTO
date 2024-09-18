@@ -10,8 +10,7 @@ $tel = $_POST['telefono'];
 $correo = $_POST['correo'];
 $contra = $_POST['contra'];
 
-
-$sql = "UPDATE user_parking SET Nombre='$nombre', Apellido='$ape', Telefono='$tel', Correo='$correo', Contrasena='$contra' WHERE ID='$id'";
+$sql = "UPDATE users SET Nombre='$nombre', Apellido='$ape', Telefono='$tel', Correo='$correo', Contrasena='$contra' WHERE ID='$id'";
 
 
 $consulta = mysqli_query($enlace, $sql);

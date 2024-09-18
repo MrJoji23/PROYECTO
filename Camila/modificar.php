@@ -4,7 +4,7 @@ $enlace= conexxion();
 
 $id= $_GET['id'];
 
-$sql= "SELECT * FROM user_parking WHERE id='$id'";
+$sql= "SELECT * FROM users WHERE id='$id'";
 $consulta= mysqli_query($enlace,$sql);
 $fila= mysqli_fetch_array($consulta);
 ?>
