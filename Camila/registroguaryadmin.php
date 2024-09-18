@@ -27,15 +27,6 @@ $enlace= conexxion();
         <div class="grupo">
             <label for="documento">Numero de Documento:</label>
             <input type="text" name="documento" id="documento" autocomplete="off" />
-        </div>
-
-        <div class="grupo">
-            <label for="documento">Roles:</label>
-            <select name="opcion2" id="opcion2">
-                <option value="oc">Seleccione su Rol:</option>
-                <option value="guardia">Guardia de Seguridad</option>
-                <option value="admin">Administrador</option>
-            </select>
         </div><br>
         
         <div class="grupo">
@@ -58,6 +49,17 @@ $enlace= conexxion();
             <label for="contraseña">Contraseña:</label>
             <input type="password" name="contraseña" id="contraseña" autocomplete="off"/>
         </div>
+        <div class="grupo">
+        <label for="documento">Rol:</label>
+        <select name="opcion2" id="opcion2"><br>
+        <option value="0">Seleccione una opción</option><br>
+        <option value="3">Residente</option><br>
+        <option value="4">Visitante</option><br>
+        <option value="2">Guardia de seguridad</option><br>
+        <option value="1">Administración</option><br>
+    </select><br><br>
+        </div>
+
 
         <div class="grupo">
             <input type="submit" value="Enviar" name="envio" />

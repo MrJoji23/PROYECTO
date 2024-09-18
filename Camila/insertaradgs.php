@@ -4,15 +4,15 @@ $enlace=conexxion();
 
 $tdocu=$_POST['opcion'];
 $id= $_POST['documento'];
-$rol=$_POST['opcion2'];
 $nombre= $_POST['nombre'];
 $ape= $_POST['apellido'];
 $tel=$_POST['telefono'];
 $correo=$_POST['correo'];
 $contra=$_POST['contraseña'];
+$rol=$_POST['opcion2'];
 
 
-$sql= "INSERT INTO administracion VALUES( '$tdocu', '$id','$rol', '$nombre', '$ape', '$tel', '$correo', '$contra')";
+$sql= "INSERT INTO users VALUES( '$tdocu', '$id','$nombre', '$ape', '$tel', '$correo', '$contra','$rol')";
 $consulta=mysqli_query($enlace,$sql);
 
 if($consulta){
